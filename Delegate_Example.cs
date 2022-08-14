@@ -9,13 +9,25 @@ class Overview
     static void Main(string[] args)
 	{
 		delegatedFunction = DelegateFunction;
-        delegatedFunction();
-    }
+	    	delegateFunction += SecondDelegateFunction;
+        	delegatedFunction();
+	    	delegateFunction -= SecondDelegateFunction;
+	    	delegatedFunction();
+    	}
+	
 	  
 	private void DelegateFunction()
 	{  
 		Console.Write("Will DelegateFunction");
 	}
 	
-	// Output: Will DelegateFunction
+	
+	private void SecondDelegateFunction()
+	{  
+		Console.Write("Will SecondDelegateFunction");
+	}
+	
+	// Output: 	Will DelegateFunction
+			Will SecondDelegateFunction
+			Will DelegateFunction
 }
