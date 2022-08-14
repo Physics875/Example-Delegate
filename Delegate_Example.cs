@@ -27,7 +27,7 @@ class Overview
 		Console.Write("Will SecondDelegateFunction");
 	}
 	
-	// Output: 	Will DelegateFunction
+	/* Output: 	Will DelegateFunction
 			Will SecondDelegateFunction
-			Will DelegateFunction
+			Will DelegateFunction */
 }
